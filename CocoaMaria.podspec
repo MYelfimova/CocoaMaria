@@ -1,42 +1,21 @@
-#
-# Be sure to run `pod lib lint CocoaMaria.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
-Pod::Spec.new do |s|
-  s.name             = 'CocoaMaria'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CocoaMaria.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/Maria_Yelfimova/CocoaMaria'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Maria_Yelfimova' => 'maria@kidoz.net' }
-  s.source           = { :git => 'https://github.com/Maria_Yelfimova/CocoaMaria.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'CocoaMaria/Classes/**/*'
+Pod::Spec.new do |spec|
+    spec.name               = "CocoaMaria"
+    spec.version            = "1.0.0"
+    spec.summary            = "Trying to publish .xcframework to cocoa pods."
+    spec.description        = "Trying to publish .xcframework to cocoa pods for iOS apps! Fingers crossed :)"
+    spec.platform = :ios, '9.0'
+    spec.homepage           = "..."
+    spec.documentation_url  = "..."
+    spec.license            = { :type => "MIT" }
+    spec.author             = { "CocoaMaria" => "maria.yelfimova@gmail.com" }
+    spec.source             = { :git => 'https://github.com/MYelfimova/CocoaMaria.git', :tag => "#{spec.version}" }
+    spec.swift_version      = "5.3"
   
-  # s.resource_bundles = {
-  #   'CocoaMaria' => ['CocoaMaria/Assets/*.png']
-  # }
+    # Supported deployment targets
+    spec.ios.deployment_target  = "11.0"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
-end
+    spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
+    # Published binaries
+    spec.vendored_frameworks = "CocoaMaria.xcframework"
+  end

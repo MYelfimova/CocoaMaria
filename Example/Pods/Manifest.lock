@@ -1,0 +1,16 @@
+PODS:
+  - CocoaMaria (0.1.0)
+
+DEPENDENCIES:
+  - CocoaMaria (from `../`)
+
+EXTERNAL SOURCES:
+  CocoaMaria:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaMaria: 3a3168888551ed8e712f663da2b2b5243e99ab8d
+
+PODFILE CHECKSUM: cde42120f3d93702a9afd8deab460781fd3022fe
+
+COCOAPODS: 1.12.1

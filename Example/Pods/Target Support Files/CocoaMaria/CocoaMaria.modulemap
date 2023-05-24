@@ -1,0 +1,6 @@
+framework module CocoaMaria {
+  umbrella header "CocoaMaria-umbrella.h"
+
+  export *
+  module * { export * }
+}
