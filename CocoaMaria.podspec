@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
     # Supported deployment targets
     spec.ios.deployment_target  = "11.0"
 
-    spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    #spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
     # Published binaries
     spec.vendored_frameworks = "CocoaMaria.xcframework"
