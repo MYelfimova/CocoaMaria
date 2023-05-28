@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name               = "CocoaMaria"
-    spec.version            = "1.0.0"
+    spec.version            = "1.0.1"
     spec.summary            = "Trying to publish .xcframework to cocoa pods."
     spec.description        = "Trying to publish .xcframework to cocoa pods for iOS apps! Fingers crossed :)"
     spec.platform = :ios, '9.0'
