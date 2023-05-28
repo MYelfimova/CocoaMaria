@@ -17,5 +17,5 @@ Pod::Spec.new do |spec|
     #spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
     # Published binaries
-    spec.vendored_frameworks = "CocoaMaria.xcframework"
+    spec.vendored_frameworks = "KidozSDK.xcframework"
   end
