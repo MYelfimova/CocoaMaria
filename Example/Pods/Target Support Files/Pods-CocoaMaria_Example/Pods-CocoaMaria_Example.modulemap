@@ -1,6 +1,0 @@
-framework module Pods_CocoaMaria_Example {
-  umbrella header "Pods-CocoaMaria_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

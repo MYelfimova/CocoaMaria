@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
     spec.name               = "CocoaMaria"
-    spec.version            = "1.0.1"
+    spec.version            = "1.0.2"
     spec.summary            = "Trying to publish .xcframework to cocoa pods."
     spec.description        = "Trying to publish .xcframework to cocoa pods for iOS apps! Fingers crossed :)"
-    spec.platform = :ios, '9.0'
+    spec.platform = :ios, '10.0'
     spec.homepage           = "..."
     spec.documentation_url  = "..."
     spec.license            = { :type => "MIT" }
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
     spec.swift_version      = "5.3"
   
     # Supported deployment targets
-    spec.ios.deployment_target  = "9.0"
+    spec.ios.deployment_target  = "10.0"
 
     #spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
